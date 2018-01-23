@@ -6,4 +6,4 @@ function getArea(dimensioni) {
     }
 }
 
-export{getArea};
+module.exports = getArea;
