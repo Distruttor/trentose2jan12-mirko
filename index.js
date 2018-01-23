@@ -9,7 +9,9 @@ app.get('/getArea', (req,res) => {
     let side1 = req.query.side1;
     let side2 = req.query.side2;
 
-    let ris = getArea([side1,side2]);
+    let num1 = parseInt(side1);
+    let num2 = parseInt(side2);
+    let ris = getArea([num1,num2]);
 
     let objris = {area:ris};
     if(ris === -1) {
